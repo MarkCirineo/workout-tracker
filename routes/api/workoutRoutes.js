@@ -23,7 +23,17 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-
+    db.Workout.findOneAndUpdate(
+        { _id: req.params.id },
+        { $push: { exercises: req.body } }, 
+        { new: true }
+        )
+            .then(dbWorkout => {
+                res.json(dbWorkout);
+            })
+            .catch(err => {
+                res.json(err);
+            });
 });
 
 router.get("/range", (req, res) => {
