@@ -10,17 +10,23 @@ Some screenshots of the website:
 ![picture of the dashboard](/assets/images/dashboard.png)
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
+- [Installation](#installation)
 - [License](#license)
 - [How To Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
-## Installation
-You can download the files from the GitHub repo.
 
 ## Usage
 You can visit the website [here](https://obscure-earth-62239.herokuapp.com/)
+
+## Installation
+You can use the application through the link above or follow the instructions below to run the files locally.
+
+- Clone the repository to use the files
+- Run "npm i" in a terminal at the root directory level to install the dependencies (You need to have Node.js installed on your machine)
+- Run "npm run start" in the terminal to run the application
+- Go to http://localhost:3001/ in your browser to use the application
 
 ## License
 MIT License
